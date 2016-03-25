@@ -217,8 +217,8 @@ Discarded input sections
 
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
  .reginfo       0x00000000       0x18 build/default/production/ADC.o
- .reginfo       0x00000000       0x18 build/default/production/PWM.o
  .reginfo       0x00000000       0x18 build/default/production/main.o
+ .reginfo       0x00000000       0x18 build/default/production/PWM.o
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX470F512L\default_isr_vectors.o
  .discard       0x00000000       0xb8 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX470F512L\default_isr_vectors.o
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
@@ -299,8 +299,8 @@ Linker script and memory map
 LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX470F512L/crt0_mips32r2.o
 LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
 LOAD build/default/production/ADC.o
-LOAD build/default/production/PWM.o
 LOAD build/default/production/main.o
+LOAD build/default/production/PWM.o
                 0x00000001                __MPLAB_BUILD = 0x1
 LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX470F512L\default_isr_vectors.o
 LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
@@ -888,8 +888,8 @@ END GROUP
 .mdebug.abi32   0xa0000000        0x0
  *(.mdebug.abi32)
  .mdebug.abi32  0xa0000000        0x0 build/default/production/ADC.o
- .mdebug.abi32  0xa0000000        0x0 build/default/production/PWM.o
  .mdebug.abi32  0xa0000000        0x0 build/default/production/main.o
+ .mdebug.abi32  0xa0000000        0x0 build/default/production/PWM.o
  .mdebug.abi32  0xa0000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .mdebug.abi32  0xa0000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .mdebug.abi32  0xa0000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -939,8 +939,8 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x3c build/default/production/ADC.o
                                  0x3d (size before relaxing)
- .comment       0x00000000       0x3d build/default/production/PWM.o
  .comment       0x00000000       0x3d build/default/production/main.o
+ .comment       0x00000000       0x3d build/default/production/PWM.o
  .comment       0x00000000       0x3d c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .comment       0x00000000       0x3d c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .comment       0x00000000       0x3d c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -964,9 +964,9 @@ END GROUP
  .debug_aranges
                 0x00000000       0x20 build/default/production/ADC.o
  .debug_aranges
-                0x00000020       0x20 build/default/production/PWM.o
+                0x00000020       0x20 build/default/production/main.o
  .debug_aranges
-                0x00000040       0x20 build/default/production/main.o
+                0x00000040       0x20 build/default/production/PWM.o
  .debug_aranges
                 0x00000060       0x20 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_aranges
@@ -984,8 +984,8 @@ END GROUP
 .debug_info     0x00000000     0x19fb
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xd07 build/default/production/ADC.o
- .debug_info    0x00000d07      0x5f6 build/default/production/PWM.o
- .debug_info    0x000012fd      0x2e3 build/default/production/main.o
+ .debug_info    0x00000d07      0x2e3 build/default/production/main.o
+ .debug_info    0x00000fea      0x5f6 build/default/production/PWM.o
  .debug_info    0x000015e0       0xe3 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_info    0x000016c3       0xbd c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_info    0x00001780       0xc5 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -995,8 +995,8 @@ END GROUP
 .debug_abbrev   0x00000000      0x310
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0xbc build/default/production/ADC.o
- .debug_abbrev  0x000000bc       0xd3 build/default/production/PWM.o
- .debug_abbrev  0x0000018f       0xb9 build/default/production/main.o
+ .debug_abbrev  0x000000bc       0xb9 build/default/production/main.o
+ .debug_abbrev  0x00000175       0xd3 build/default/production/PWM.o
  .debug_abbrev  0x00000248       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_abbrev  0x00000270       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_abbrev  0x00000298       0x28 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1006,8 +1006,8 @@ END GROUP
 .debug_line     0x00000000      0x555
  *(.debug_line)
  .debug_line    0x00000000       0xf7 build/default/production/ADC.o
- .debug_line    0x000000f7       0xc8 build/default/production/PWM.o
- .debug_line    0x000001bf       0xc8 build/default/production/main.o
+ .debug_line    0x000000f7       0xc8 build/default/production/main.o
+ .debug_line    0x000001bf       0xc8 build/default/production/PWM.o
  .debug_line    0x00000287       0x97 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_line    0x0000031e       0x84 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_line    0x000003a2       0x88 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1017,8 +1017,8 @@ END GROUP
 .debug_frame    0x00000000      0x164
  *(.debug_frame)
  .debug_frame   0x00000000       0x50 build/default/production/ADC.o
- .debug_frame   0x00000050       0x30 build/default/production/PWM.o
- .debug_frame   0x00000080       0x2c build/default/production/main.o
+ .debug_frame   0x00000050       0x2c build/default/production/main.o
+ .debug_frame   0x0000007c       0x30 build/default/production/PWM.o
  .debug_frame   0x000000ac       0x2c c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_frame   0x000000d8       0x20 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_frame   0x000000f8       0x20 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1028,8 +1028,8 @@ END GROUP
 .debug_str      0x00000000        0x0
  *(.debug_str)
  .debug_str     0x00000000        0x0 build/default/production/ADC.o
- .debug_str     0x00000000        0x0 build/default/production/PWM.o
  .debug_str     0x00000000        0x0 build/default/production/main.o
+ .debug_str     0x00000000        0x0 build/default/production/PWM.o
  .debug_str     0x00000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_str     0x00000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_str     0x00000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1071,9 +1071,9 @@ END GROUP
  .gnu.attributes
                 0x00000000       0x10 build/default/production/ADC.o
  .gnu.attributes
-                0x00000010       0x10 build/default/production/PWM.o
+                0x00000010       0x10 build/default/production/main.o
  .gnu.attributes
-                0x00000020       0x10 build/default/production/main.o
+                0x00000020       0x10 build/default/production/PWM.o
  .gnu.attributes
                 0x00000030       0x10 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .gnu.attributes
@@ -1097,7 +1097,7 @@ LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4
 LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
 END GROUP
 LOAD c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
-OUTPUT(dist/default/production/Lab3P1.X.production.elf elf32-tradlittlemips)
+OUTPUT(dist/default/production/Lab3P2.X.production.elf elf32-tradlittlemips)
 LOAD stack
 LOAD data_init
 
@@ -1444,16 +1444,16 @@ LOAD data_init
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v1.40/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX470F512L\default_isr_vectors.o
 
 .bss            0x00000000        0x0
- .bss           0x00000000        0x0 build/default/production/main.o
-
-.data           0x00000000        0x0
- .data          0x00000000        0x0 build/default/production/main.o
-
-.bss            0x00000000        0x0
  .bss           0x00000000        0x0 build/default/production/PWM.o
 
 .data           0x00000000        0x0
  .data          0x00000000        0x0 build/default/production/PWM.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 build/default/production/main.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 build/default/production/main.o
 
 .bss            0x00000000        0x0
  .bss           0x00000000        0x0 build/default/production/ADC.o
