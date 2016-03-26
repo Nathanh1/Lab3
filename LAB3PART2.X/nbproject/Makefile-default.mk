@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c adc.c lcd.c timer.c PWM.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c adc.c lcd.c timer.c PWM.c QATestLab3.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/PWM.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/PWM.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/PWM.o ${OBJECTDIR}/QATestLab3.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/timer.o.d ${OBJECTDIR}/PWM.o.d ${OBJECTDIR}/QATestLab3.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/PWM.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/timer.o ${OBJECTDIR}/PWM.o ${OBJECTDIR}/QATestLab3.o
 
 # Source Files
-SOURCEFILES=main.c adc.c lcd.c timer.c PWM.c
+SOURCEFILES=main.c adc.c lcd.c timer.c PWM.c QATestLab3.c
 
 
 CFLAGS=
@@ -124,6 +124,12 @@ ${OBJECTDIR}/PWM.o: PWM.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/PWM.o 
 	@${FIXDEPS} "${OBJECTDIR}/PWM.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/PWM.o.d" -o ${OBJECTDIR}/PWM.o PWM.c   
 	
+${OBJECTDIR}/QATestLab3.o: QATestLab3.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/QATestLab3.o.d 
+	@${RM} ${OBJECTDIR}/QATestLab3.o 
+	@${FIXDEPS} "${OBJECTDIR}/QATestLab3.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/QATestLab3.o.d" -o ${OBJECTDIR}/QATestLab3.o QATestLab3.c   
+	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -154,6 +160,12 @@ ${OBJECTDIR}/PWM.o: PWM.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/PWM.o.d 
 	@${RM} ${OBJECTDIR}/PWM.o 
 	@${FIXDEPS} "${OBJECTDIR}/PWM.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/PWM.o.d" -o ${OBJECTDIR}/PWM.o PWM.c   
+	
+${OBJECTDIR}/QATestLab3.o: QATestLab3.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/QATestLab3.o.d 
+	@${RM} ${OBJECTDIR}/QATestLab3.o 
+	@${FIXDEPS} "${OBJECTDIR}/QATestLab3.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/QATestLab3.o.d" -o ${OBJECTDIR}/QATestLab3.o QATestLab3.c   
 	
 endif
 
