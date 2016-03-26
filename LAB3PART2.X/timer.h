@@ -1,15 +1,19 @@
 // ******************************************************************************************* //
 // 
-// File:        PWM.h
+// File:        timer.h
 // Due Date:    3/25/2016
 // Team:        203
-// Description: PWM.h header file for Lab 3 Part 1
+// Description: timer.h header file for Lab 3 Part 2 
 // ******************************************************************************************* //
 
-#ifndef PWM_H
-#define	PWM_H
+ 
 
-void initPWM();
+#ifndef INITTIMER_H
+#define	INITTIMER_H
+void initTimer1();
 
-#endif	/* PWM_H */
+void delayUs(unsigned int delay);
+
+#endif	/* INITTIMER_H */
+
 

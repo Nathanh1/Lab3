@@ -1,17 +1,16 @@
 // ******************************************************************************************* //
 // 
-// File:        PWM.c
+// File:        pwm.c
 // Due Date:    3/25/2016
 // Team:        203
-// Description: PWM.c file for Lab 3 Part 1
+// Description: pwm.c file for Lab 3 Part 2 
 // ******************************************************************************************* //
+
 
 
 #include <xc.h>
 #include "PWM.h"
  
-//16.1
-//12 for pins
 
 void initPWM()
 {  

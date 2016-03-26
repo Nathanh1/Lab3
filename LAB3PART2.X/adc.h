@@ -1,15 +1,16 @@
 // ******************************************************************************************* //
 // 
-// File:        PWM.h
+// File:        adc.h
 // Due Date:    3/25/2016
 // Team:        203
-// Description: PWM.h header file for Lab 3 Part 1
+// Description: ADC.h header file for Lab 3 Part 2 
 // ******************************************************************************************* //
 
-#ifndef PWM_H
-#define	PWM_H
 
-void initPWM();
+#ifndef ADC_H
+#define	ADC_H
 
-#endif	/* PWM_H */
+void initADC();
+void ChangeADC(unsigned int i);
 
+#endif

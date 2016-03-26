@@ -3,15 +3,14 @@
 // File:        ADC.c
 // Due Date:    3/25/2016
 // Team:        203
-// Description: ADC.c file for Lab 3 Part 1
+// Description: ADC.c file for Lab 3 Part 2 
 // ******************************************************************************************* //
-
 
 
 #include <xc.h>
 #include "ADC.h"
  
- //ssrc
+ 
 
 void initADC()
 {
@@ -30,15 +29,15 @@ void initADC()
     AD1CHSbits.CH0SA = 0;       //Scan AN0
     AD1CON1bits.ADON = 1;       //Turn on the ADC    Turn on Last
                                 //Channel 0 positive input is AN0  //Find pin AN0 
-                                //AN0 is pin 34 on J11 
-                               
-    
-    
-    
+                                //AN0 is pin 34 on J11  
 }
+
 
 void ChangeADC(unsigned int i)
 {
+    
+    AD1CON1bits.ADON = 0;       //Turns the ADC off just in case if it is on.
+    
     TRISBbits.TRISB0 = 0;       //This is AN0  pin 34
     TRISBbits.TRISB1 = 0;       //This is AN1  pin 33
     TRISBbits.TRISB2 = 0;       //This is AN2  pin 32
@@ -86,10 +85,4 @@ void ChangeADC(unsigned int i)
         
     }
     AD1CON1bits.ADON = 1;       //Turn on the ADC    Turn on Last
-                                //Channel 0 positive input is AN0  //Find pin AN0 
-                                //AN0 is pin 34 on J11 
-                               
-    
-    
-    
 }
